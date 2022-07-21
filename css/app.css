@@ -835,6 +835,18 @@ video {
   gap: 2.5rem;
 }
 
+.gap-0{
+  gap: 0px;
+}
+
+.\!gap-0{
+  gap: 0px !important;
+}
+
+.\!gap-\[0\]{
+  gap: 0 !important;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -1375,6 +1387,16 @@ input#gform_submit_button_1{
   content: var(--tw-content);
 }
 
+.wp-container-17{
+  gap: 0 !important;
+}
+
+@media (min-width: 1440px){
+  .wp-container-17{
+    gap: 1.5em !important;
+  }
+}
+
 article > *:not(.entry-content), 
 .entry-content > *{
   margin-left: auto;
@@ -1631,6 +1653,18 @@ footer .widget p{
 
   .\32xl\:w-\[59\%\]{
     width: 59%;
+  }
+
+  .\32xl\:\!gap-\[2em\]{
+    gap: 2em !important;
+  }
+
+  .\32xl\:\!gap-\[1\.75em\]{
+    gap: 1.75em !important;
+  }
+
+  .\32xl\:\!gap-\[1\.5em\]{
+    gap: 1.5em !important;
   }
 
   .\32xl\:px-10{

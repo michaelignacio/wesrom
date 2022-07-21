@@ -97,3 +97,7 @@ input#gform_submit_button_1 {
 .card-item h3 {
     @apply text-[24px] font-bold before:content-[url(../resources/img/check.svg)] before:relative before:top-2 before:mr-3 pb-5 mb-5 border-b-2;
 }
+
+.wp-container-17 {
+    @apply !gap-[0] 2xl:!gap-[1.5em];
+}
