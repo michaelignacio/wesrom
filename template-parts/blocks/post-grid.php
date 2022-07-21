@@ -24,10 +24,12 @@ if( !empty($block['align']) ) {
     $className .= ' align' . $block['align'];
 }
 
+$count = get_field('count') ? get_field('count') : -1;
+
 $args = array(  
     'post_type' => 'service',
     'post_status' => 'publish',
-    'posts_per_page' => 8, 
+    'posts_per_page' => $count, 
     'orderby' => 'title', 
     'order' => 'ASC', 
 );
