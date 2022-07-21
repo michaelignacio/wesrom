@@ -107,3 +107,28 @@ function tailpress_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 }
 
 add_filter( 'nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class', 10, 3 );
+
+/**
+ * Registers the ACF custom block Post Grid
+ *
+ * @return array
+ */
+function wesrom_custom_blocks() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'post-grid',
+            'title'             => __('Post Grid'),
+            'description'       => __('A custom post grid.'),
+            'render_template'   => 'template-parts/blocks/post-grid.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'post', 'grid' ),
+        ));
+    }
+}
+
+add_action('acf/init', 'wesrom_custom_blocks');
