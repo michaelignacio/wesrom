@@ -1,0 +1,27 @@
+.card-half {
+    @apply p-16;
+
+    img {
+        @apply h-[80px] object-contain;
+    }
+}
+
+.tw-mb-5 {
+    @apply mb-5;
+}
+
+.tw-mb-0 {
+    @apply !mb-0;
+}
+
+.tw-mb-12px {
+    @apply !mb-[12px];
+}
+
+.has-primary-background-color {
+    @apply bg-primary;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
