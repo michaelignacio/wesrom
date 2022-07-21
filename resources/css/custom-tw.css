@@ -49,3 +49,40 @@ h3 {
 .post-grid .learn-more {
     @apply after:content-[url(../resources/img/arrow-right.svg)] after:ml-[8px];
 }
+
+#gform_wrapper_1 {
+    @apply bg-[#FAFAFA] px-8 2xl:px-24 py-8 border-t-8 border-primary;
+}
+
+#gform_wrapper_1 h2 {
+    @apply text-[40px] font-light !mb-0 2xl:leading-loose;
+}
+
+#gform_wrapper_1 .gform_description {
+    @apply text-[20px] block 2xl:w-[59%] mb-10;
+}
+
+#gform_wrapper_1 input,
+#gform_wrapper_1 textarea {
+    @apply text-[20px] bg-transparent border-b-2;
+}
+
+input#gform_submit_button_1 {
+    @apply font-semibold bg-primary text-white px-10 py-3 text-[20px] uppercase;
+}
+
+.gform_submission_error.hide_summary {
+    @apply !text-xl;
+}
+
+#gform_1 {
+    @apply relative;
+}
+
+#field_1_7 {
+    @apply 2xl:absolute right-0 bottom-10 2xl:w-2/3 text-[12px];
+}
+
+#gform_1 a {
+    @apply underline;
+}

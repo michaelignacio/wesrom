@@ -8,13 +8,13 @@
 <?php do_action( 'tailpress_content_after' ); ?>
 
 <footer id="colophon" class="site-footer bg-gray-50 py-12" role="contentinfo">
-	<div class="flex max-w-screen-content mx-auto justify-between w-full">
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-screen-content mx-auto px-10 2xl:px-0 gap-10">
 		<div>
 			<h2><?php echo wp_get_nav_menu_name('footer_menu_1'); ?></h2>
 			<?php wp_nav_menu(
 				array(
 					'container_id'    => 'footer-menu-1',
-					'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
+					'container_class' => '',
 					'menu_class'      => 'lg:flex lg:-mx-4',
 					'theme_location'  => 'footer_menu_1',
 					'li_class'        => 'lg:mx-4',
@@ -28,7 +28,7 @@
 			<?php wp_nav_menu(
 				array(
 					'container_id'    => 'footer-menu-2',
-					'container_class' => 'hidden bg-gray-100 mt-4 p-4 lg:mt-0 lg:p-0 lg:bg-transparent lg:block',
+					'container_class' => '',
 					'menu_class'      => 'lg:flex lg:-mx-4',
 					'theme_location'  => 'footer_menu_2',
 					'li_class'        => 'lg:mx-4',
