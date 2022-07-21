@@ -111,7 +111,6 @@ add_filter( 'nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class'
 /**
  * Registers the ACF custom block Post Grid
  *
- * @return array
  */
 function wesrom_custom_blocks() {
 
@@ -132,3 +131,39 @@ function wesrom_custom_blocks() {
 }
 
 add_action('acf/init', 'wesrom_custom_blocks');
+
+/**
+ * Register WP menu locations
+ *
+ */
+if ( ! function_exists( 'wesrom_register_nav_menu' ) ) {
+ 
+    function wesrom_register_nav_menu(){
+        register_nav_menus( array(
+            'footer_menu_1'  => __( 'Footer Menu 1', 'wesrom' ),
+            'footer_menu_2'  => __( 'Footer Menu 2', 'wesrom' ),
+        ) );
+    }
+    add_action( 'after_setup_theme', 'wesrom_register_nav_menu', 0 );
+}
+
+/**
+ * Register widget areas
+ *
+ */
+function wesrom_widgets_init() {
+    register_sidebar( array(
+        'name'          => 'Footer Address Widget Area',
+        'id'            => 'footer-address-widget',
+        'before_widget' => '',
+        'after_widget'  => '',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Socials Widget Area',
+        'id'            => 'footer-socials-widget',
+        'before_widget' => '',
+        'after_widget'  => '',
+    ) );
+}
+add_action( 'widgets_init', 'wesrom_widgets_init' );

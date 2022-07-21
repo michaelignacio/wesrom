@@ -42,3 +42,40 @@ article > *:not(.entry-content),
         }
     }
 }
+
+/* Custom styles */
+#menu-header-menu li a {
+    @apply font-bold text-[#949494] text-[20px];
+}
+
+footer ul {
+    @apply flex flex-col gap-4 text-black font-medium;
+}
+
+footer h2 {
+    @apply uppercase font-extrabold mb-4 text-xl;
+}
+
+footer .widget p {
+    @apply leading-[2.35rem] font-medium;
+}
+
+.wp-block-social-links {
+    @apply flex flex-row;
+}
+
+.footer .container {
+    @apply !max-w-screen-content;
+}
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-facebook,
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-twitter,
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-linkedin {
+    background-color: transparent;
+    color: #000;
+}
+
+.wp-block-social-links .wp-social-link svg {
+    height: 1.25em;
+    width: 1.25em;
+}

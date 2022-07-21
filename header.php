@@ -19,8 +19,9 @@
 
 	<header>
 
-		<div class="mx-auto container">
-			<div class="lg:flex lg:justify-between lg:items-center border-b py-6">
+		<!-- <div class="mx-auto container"> -->
+		<div class="">
+			<div class="lg:flex lg:justify-between lg:items-center border-b py-6 px-10">
 				<div class="flex justify-between items-center">
 					<div>
 						<?php if ( has_custom_logo() ) { ?>
