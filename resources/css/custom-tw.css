@@ -1,3 +1,7 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .card-half {
     @apply p-16;
 
@@ -14,6 +18,18 @@
     @apply !mb-0;
 }
 
+h1 {
+    @apply !mb-[40px];
+}
+
+h2 {
+    @apply !mb-[24px];
+}
+
+h3 {
+    @apply !text-h3 !leading-[32px];
+}
+
 .tw-mb-12px {
     @apply !mb-[12px];
 }
@@ -22,6 +38,14 @@
     @apply bg-primary;
 }
 
-html {
-    font-family: 'Montserrat', sans-serif;
+.tw-w-80 {
+    @apply w-4/5;
+}
+
+.post-grid .item p {
+    @apply text-[20px] leading-[28px];
+}
+
+.post-grid .learn-more {
+    @apply after:content-[url(../resources/img/arrow-right.svg)] after:ml-[8px];
 }

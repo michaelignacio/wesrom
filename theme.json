@@ -60,6 +60,11 @@
           "slug": "xxxl",
           "name": "3XL",
           "size": "1.875rem"
+        },
+        {
+          "slug": "h3",
+          "name": "H3",
+          "size": "24px"
         }
       ]
     }
