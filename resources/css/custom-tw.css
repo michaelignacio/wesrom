@@ -101,3 +101,51 @@ input#gform_submit_button_1 {
 .wp-container-17 {
     @apply !gap-[0] 2xl:!gap-[1.5em];
 }
+
+.tns-slide-active {
+    /* @apply bg-primary; */
+}
+
+.testimonial-cover {
+    @apply p-0;
+}
+
+.active-slide .inner {
+    @apply !bg-[#0085D0];
+}
+
+.active-slide .inner p {
+    @apply text-white;
+}
+
+.tns-item .inner svg {
+    @apply fill-black;
+}
+
+.active-slide .inner svg {
+    @apply fill-white;
+}
+
+.tns-item {
+    @apply !align-bottom;
+}
+
+.tns-item .inner {
+    @apply max-h-[414px];
+}
+
+.tns-item.active-slide .inner {
+    @apply !min-h-[494px];
+}
+
+.tns-controls {
+    @apply relative left-3/4 top-10 z-50;
+}
+
+.tns-controls button[data-controls="prev"] {
+    @apply before:content-[url(../resources/img/slider-left.svg)] text-[0] mx-5;
+}
+
+.tns-controls button[data-controls="next"] {
+    @apply before:content-[url(../resources/img/slider-right.svg)] text-[0];
+}

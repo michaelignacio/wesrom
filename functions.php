@@ -117,7 +117,7 @@ function wesrom_custom_blocks() {
     // Check function exists.
     if( function_exists('acf_register_block_type') ) {
 
-        // register a testimonial block.
+        // register a Post Grid block.
         acf_register_block_type(array(
             'name'              => 'post-grid',
             'title'             => __('Post Grid'),
@@ -126,6 +126,17 @@ function wesrom_custom_blocks() {
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'post', 'grid' ),
+        ));
+
+        // register a Testimonial Slider block.
+        acf_register_block_type(array(
+            'name'              => 'testimonial-slider',
+            'title'             => __('Testimonial Slider'),
+            'description'       => __('A custom testimonial slider.'),
+            'render_template'   => 'template-parts/blocks/testimonial-slider.php',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'testimonial', 'slider' ),
         ));
     }
 }
