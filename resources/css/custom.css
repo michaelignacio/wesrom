@@ -79,3 +79,7 @@ footer .widget p {
     height: 1.25em;
     width: 1.25em;
 }
+
+html {
+    @apply overflow-x-hidden;
+}

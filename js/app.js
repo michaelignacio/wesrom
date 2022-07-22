@@ -36,6 +36,7 @@
     });
 
     var info = slider.getInfo();
+    
     function activateSlide() {
       var activeSlides = new Array();
 
