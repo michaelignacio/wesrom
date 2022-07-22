@@ -107,7 +107,7 @@ input#gform_submit_button_1 {
 }
 
 .testimonial-cover {
-    @apply p-0;
+    @apply p-0 !mt-0;
 }
 
 .active-slide .inner {
@@ -131,21 +131,21 @@ input#gform_submit_button_1 {
 }
 
 .tns-item .inner {
-    @apply max-h-[414px];
+    @apply md:max-h-[414px];
 }
 
 .tns-item.active-slide .inner {
     @apply !min-h-[494px];
 }
 
+/* .tns-controls {
+    @apply relative sm:left-3/4 2xl:top-16 z-50 w-[8rem];
+} */
+
 .tns-controls {
-    @apply relative left-3/4 top-10 z-50;
+    @apply w-full flex mt-5 gap-5 justify-center content:w-1/2 content:ml-auto content:relative content:top-14 content:z-50;
 }
 
-.tns-controls button[data-controls="prev"] {
-    @apply before:content-[url(../resources/img/slider-left.svg)] text-[0] mx-5;
-}
-
-.tns-controls button[data-controls="next"] {
-    @apply before:content-[url(../resources/img/slider-right.svg)] text-[0];
+html {
+    @apply overflow-x-hidden;
 }

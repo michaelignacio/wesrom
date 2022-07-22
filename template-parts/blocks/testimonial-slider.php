@@ -41,8 +41,8 @@ $loop = new WP_Query( $args );
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="testimonial">
-            <div class="inner flex items-center justify-center flex-col bg-[#FAFAFA] h-[414px]">
-                <div class="w-[472px] relative">
+            <div class="inner flex items-center justify-center flex-col bg-[#FAFAFA] md:h-[414px]">
+                <div class="p-5 md:p-0 md:w-[472px] relative">
                     <?php the_content(); ?>
                     <p class="text-[20px] leading-[24px]"><span class="font-bold uppercase"><?php echo get_the_title(); ?></span>, <?php the_field('role', get_the_ID()); ?>, <?php the_field('company', get_the_ID()); ?></p>
                     <svg width="64" height="50" viewBox="0 0 64 50" fill="none" xmlns="http://www.w3.org/2000/svg">
